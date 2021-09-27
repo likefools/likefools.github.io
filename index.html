@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <title>my website</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg shadow p-3 navbar-light bg-light fs-4">
+        <div class="container">
+            <a href="#" class="navbar-brand fs-4">yisraelk1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">דף הבית</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ידע נרחב</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">בלוג</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- shwcase -->
+    <section class="p-5 text-center">
+        <div class="container">
+            <h2>yisraelk1</h2>
+            <hr class="bg-primary border-2 border-top border-primary">
+            <h3>בנית אתרים זה אני</h3>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

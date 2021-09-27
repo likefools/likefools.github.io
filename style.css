@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    direction: rtl;
+    font-family: 'Varela Round', sans-serif;
+    /* background: #dedede; */
+}
+
+/* #2c3f5e */

@@ -2,14 +2,3 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "main";
 
-
-
-.bg-image{
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.5);
-    background-image: url('../imges/blur-cellphone-close-up-196644.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-}

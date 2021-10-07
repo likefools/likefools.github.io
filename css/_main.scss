@@ -8,5 +8,47 @@ section hr{
     opacity: 1;
   }
 
+.heading{
+  position: relative;
+  max-height: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  background-image: url('../imges/blur-cellphone-close-up-196644.jpg');
+  
+  .box-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
+.bg-image{
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+.main{
+  padding: 60px 0;
+  max-height: 700px;
+  background: rgb(44,63,94);
+  background: linear-gradient(153deg, rgba(44,63,94,1) 30%, rgba(76,63,29,1) 70%); 
+  .main-box{
+    padding: 30px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    background-image: url('../imges/web-design-2906159_1920.jpg');
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    p{
+      line-height: 2;
+    }
+  }
+}
+
+  
 /* #2c3f5e */

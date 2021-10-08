@@ -5,7 +5,7 @@ body{
 
 .heading{
   position: relative;
-  height: 600px;
+  height: 800px;
   @include bg-img($bg-color: rgba(255, 255, 255, 0.5));
   background-image: url('../imges/blur-cellphone-close-up-196644.jpg');
   
@@ -68,41 +68,55 @@ body{
   transform: rotate(180deg);
   bottom: -1px;
 }
+
+
 .waves-svg{
   @extend %waves-svg;
   fill: #4c3f1d;
   top: 0;
 }
+
+
+
 .knowledge{
   position: relative;
-  padding: 120px 0;
+  padding: 200px 0 0 0;
   background: linear-gradient(160deg, #dddddd 0%, #0d1a35 100%);;
-  color: $primary-color;
-  
-  .card{
-    border-radius: 10px;
-  }
-  
-  i{
-    font-size: 4em;
-    // color: $primary-color;
-  }
+  // color: $primary-color;
   h2{
-    padding: 20px 0;
+    padding: 40px 0;
     font-size: 7em;
     text-align: center;
     text-shadow: $text-shadow;
   }
-  h5{
-    padding: 10px 0;
-    font-size: 3em;
-    text-shadow: $text-shadow;
+  .card{
+    border-radius: 10px;
+    i{
+      font-size: 4em;
+      color: $yellow-800;
+      text-shadow: $text-shadow;
+    }
+    
+    h5{
+      padding: 10px 0;
+      font-size: 3em;
+      text-shadow: $text-shadow;
+    }
+    p{
+      padding: 10px;
+      font-size: 1.7em;
+      text-shadow: $text-shadow;
+    }
   }
-  p{
-    padding: 10px;
-    font-size: 1.7em;
-    text-shadow: $text-shadow;
+  
+  .icons{
+    padding: 150px 0;
+    i{
+      color: #fff;
+      font-size: 4.5em;
+    }
   }
+
 }
 
   

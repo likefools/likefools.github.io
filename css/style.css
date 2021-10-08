@@ -10579,7 +10579,7 @@ body {
 
 .heading {
   position: relative;
-  height: 600px;
+  height: 800px;
   background: rgba(255, 255, 255, 0.5);
   background-position: center center;
   background-size: cover;
@@ -10654,31 +10654,39 @@ body {
 
 .knowledge {
   position: relative;
-  padding: 120px 0;
+  padding: 200px 0 0 0;
   background: linear-gradient(160deg, #dddddd 0%, #0d1a35 100%);
-  color: #2c3f5e;
-}
-.knowledge .card {
-  border-radius: 10px;
-}
-.knowledge i {
-  font-size: 4em;
 }
 .knowledge h2, .knowledge .h2 {
-  padding: 20px 0;
+  padding: 40px 0;
   font-size: 7em;
   text-align: center;
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
-.knowledge h5, .knowledge .h5 {
+.knowledge .card {
+  border-radius: 10px;
+}
+.knowledge .card i {
+  font-size: 4em;
+  color: #664d03;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.knowledge .card h5, .knowledge .card .h5 {
   padding: 10px 0;
   font-size: 3em;
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
-.knowledge p {
+.knowledge .card p {
   padding: 10px;
   font-size: 1.7em;
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.knowledge .icons {
+  padding: 150px 0;
+}
+.knowledge .icons i {
+  color: #fff;
+  font-size: 4.5em;
 }
 
 /* #2c3f5e *//*# sourceMappingURL=style.css.map */

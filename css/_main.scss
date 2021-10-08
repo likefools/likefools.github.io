@@ -1,17 +1,12 @@
 body{
-    direction: rtl;
-    font-family: 'Varela Round', sans-serif;
-    
+  direction: rtl;
+  font-family: 'Varela Round', sans-serif;
 }
-
-section hr{
-    opacity: 1;
-  }
 
 .heading{
   position: relative;
-  max-height: 400px;
-  background: rgba(255, 255, 255, 0.5);
+  height: 600px;
+  @include bg-img($bg-color: rgba(255, 255, 255, 0.5));
   background-image: url('../imges/blur-cellphone-close-up-196644.jpg');
   
   .box-header{
@@ -20,33 +15,93 @@ section hr{
     left: 50%;
     transform: translate(-50%, -50%);
   }
-}
-
-.bg-image{
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
+  h2{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 6em;
+    letter-spacing: 8px;
+    text-shadow: $text-shadow;
+  }
+  hr{
+    opacity: 1;
+    border-top: 8px solid $primary-color;
+  }
+  h3{
+    font-size: 6em;
+    text-shadow: $text-shadow;
+  }
+  
 }
 
 .main{
-  padding: 60px 0;
-  max-height: 700px;
+  position: relative;
+  padding: 180px 0;
   background: rgb(44,63,94);
-  background: linear-gradient(153deg, rgba(44,63,94,1) 30%, rgba(76,63,29,1) 70%); 
+  background: linear-gradient(180deg, rgba(44,63,94,1) 30%, rgba(76,63,29,1) 70%); 
+  
   .main-box{
-    padding: 30px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    @include bg-img($bg-color: rgba(0, 0, 0, 0.3));
     background-image: url('../imges/web-design-2906159_1920.jpg');
-    background-position: center center;
-    background-size: cover;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
     border-radius: 8px;
-    p{
-      line-height: 2;
+    h2{
+      font-size: 4em;
+      text-shadow: $text-shadow;
     }
+    hr{
+      opacity: 1;
+      border-top: 4px solid #fff;
+      width: 220px;
+      text-shadow: $text-shadow;
+    }
+    p{
+      font-size: 2em;
+      line-height: 2;
+      text-shadow: $text-shadow;
+    }
+  } 
+}
+
+.waves-svg-top{
+  @extend %waves-svg;
+  fill: #2c3f5e;
+  transform: rotate(180deg);
+  bottom: -1px;
+}
+.waves-svg{
+  @extend %waves-svg;
+  fill: #4c3f1d;
+  top: 0;
+}
+.knowledge{
+  position: relative;
+  padding: 120px 0;
+  background: linear-gradient(160deg, #dddddd 0%, #0d1a35 100%);;
+  color: $primary-color;
+  
+  .card{
+    border-radius: 10px;
+  }
+  
+  i{
+    font-size: 4em;
+    // color: $primary-color;
+  }
+  h2{
+    padding: 20px 0;
+    font-size: 7em;
+    text-align: center;
+    text-shadow: $text-shadow;
+  }
+  h5{
+    padding: 10px 0;
+    font-size: 3em;
+    text-shadow: $text-shadow;
+  }
+  p{
+    padding: 10px;
+    font-size: 1.7em;
+    text-shadow: $text-shadow;
   }
 }
 

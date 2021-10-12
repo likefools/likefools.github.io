@@ -10689,4 +10689,11 @@ body {
   font-size: 4.5em;
 }
 
+.Portfolio {
+  padding: 200px 0;
+}
+.Portfolio h2, .Portfolio .h2 {
+  text-align: center;
+}
+
 /* #2c3f5e *//*# sourceMappingURL=style.css.map */

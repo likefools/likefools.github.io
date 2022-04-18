@@ -662,15 +662,15 @@ progress {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) * -.5);
-  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
 .row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
 }
 
@@ -5901,15 +5901,15 @@ textarea.form-control-lg {
 }
 
 .ratio-4x3 {
-  --bs-aspect-ratio: calc(3 / 4 * 100%);
+  --bs-aspect-ratio: 75%;
 }
 
 .ratio-16x9 {
-  --bs-aspect-ratio: calc(9 / 16 * 100%);
+  --bs-aspect-ratio: 56.25%;
 }
 
 .ratio-21x9 {
-  --bs-aspect-ratio: calc(9 / 21 * 100%);
+  --bs-aspect-ratio: 42.8571428571%;
 }
 
 .fixed-top {
@@ -10618,8 +10618,8 @@ body {
 .main {
   position: relative;
   padding: 180px 0;
-  background: #2c3f5e;
-  background: linear-gradient(180deg, #2c3f5e 30%, #4c3f1d 70%);
+  background: rgb(44, 63, 94);
+  background: linear-gradient(180deg, rgb(44, 63, 94) 30%, rgb(76, 63, 29) 70%);
 }
 .main .main-box {
   padding: 40px;
@@ -10690,6 +10690,7 @@ body {
 }
 .knowledge .icons {
   padding: 150px 0;
+  width: 90%;
 }
 .knowledge .icons i {
   color: #fff;
@@ -10703,6 +10704,7 @@ body {
   padding: 20px 0;
   font-size: 2.5em;
   text-align: center;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -10713,4 +10715,129 @@ footer {
   color: #ffffff;
 }
 
-/* #2c3f5e *//*# sourceMappingURL=style.css.map */
+/* #2c3f5e */
+@media only screen and (max-width: 990px) {
+  .heading h2, .heading .h2 {
+    font-size: 4rem;
+  }
+  .heading hr {
+    opacity: 1;
+  }
+  .heading h3, .heading .h3 {
+    font-size: 4rem;
+  }
+
+  .main {
+    padding: 100px 0;
+  }
+  .main .main-box {
+    padding: 20px;
+  }
+  .main .main-box h2, .main .main-box .h2 {
+    font-size: 2.8rem;
+  }
+  .main .main-box hr {
+    width: 170px;
+  }
+  .main .main-box p {
+    font-size: 1.8em;
+    line-height: 1.8;
+  }
+
+  .knowledge {
+    padding: 100px 0 0 0;
+  }
+  .knowledge h2, .knowledge .h2 {
+    padding: 50px 0;
+    font-size: 3em;
+  }
+  .knowledge .card {
+    border-radius: 10px;
+  }
+  .knowledge .card i {
+    font-size: 3em;
+    color: #664d03;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  .knowledge .card h5, .knowledge .card .h5 {
+    padding: 10px 0;
+    font-size: 2em;
+  }
+  .knowledge .card p {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  .knowledge .icons {
+    padding: 80px 0;
+  }
+  .knowledge .icons i {
+    color: #fff;
+    font-size: 3em;
+  }
+
+  .Portfolio {
+    padding: 50px 0;
+  }
+  .Portfolio h2, .Portfolio .h2 {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .heading h2, .heading .h2 {
+    font-size: 2.2rem;
+  }
+  .heading hr {
+    border-top: 3px solid #2c3f5e;
+  }
+  .heading h3, .heading .h3 {
+    font-size: 2.2rem;
+  }
+
+  .main {
+    padding: 80px 0;
+  }
+  .main .main-box {
+    padding: 20px;
+  }
+  .main .main-box h2, .main .main-box .h2 {
+    font-size: 2rem;
+  }
+  .main .main-box hr {
+    width: 120px;
+    border-top: 2px solid #fff;
+  }
+  .main .main-box p {
+    font-size: 1.1em;
+    line-height: 1.7;
+  }
+
+  .knowledge {
+    padding: 50px 0 0 0;
+  }
+  .knowledge h2, .knowledge .h2 {
+    padding: 20px 0;
+    font-size: 2em;
+  }
+  .knowledge .card {
+    border-radius: 10px;
+  }
+  .knowledge .card i {
+    font-size: 2em;
+  }
+  .knowledge .card h5, .knowledge .card .h5 {
+    padding: 10px 0;
+    font-size: 2em;
+  }
+  .knowledge .card p {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  .knowledge .icons {
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+  .knowledge .icons i {
+    color: #fff;
+    font-size: 2em;
+  }
+}/*# sourceMappingURL=style.css.map */

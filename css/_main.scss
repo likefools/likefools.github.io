@@ -81,7 +81,7 @@ body{
 .knowledge{
   position: relative;
   padding: 200px 0 0 0;
-  background: linear-gradient(160deg, #dddddd 0%, #0d1a35 100%);;
+  background: linear-gradient(160deg, #dddddd 0%, #0d1a35 100%);
   // color: $primary-color;
   h2{
     padding: 100px 0;
@@ -111,6 +111,7 @@ body{
   
   .icons{
     padding: 150px 0;
+    width: 90%;
     i{
       color: #fff;
       font-size: 4.5em;
@@ -126,6 +127,7 @@ body{
     padding: 20px 0;
     font-size: 2.5em;
     text-align: center;
+    text-shadow: $text-shadow;
   }
 }
 
